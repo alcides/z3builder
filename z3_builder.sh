@@ -13,7 +13,7 @@ fi
 if [[ `uname` == 'Darwin' ]]; then
     virtualenv venv && source venv/bin/activate
     cd z3
-    CXX=clang++ CC=clang python scripts/mk_make.py --java --python
+    CXX=clang++ CC=clang python scripts/mk_make.py --java --python --git-describe
 else
     cd z3
     python scripts/mk_make.py --java --python
